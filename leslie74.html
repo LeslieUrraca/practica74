@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+  var num1,num2,producto;
+  num1=prompt('Ingrese un valor:','');
+  num2=prompt('Ingrese un  valor:','');
+  num1=parseFloat(num1);
+  num2=parseFloat(num2);
+  if (isNaN(num1) || isNaN(num2))
+    document.write('Uno de los datos no es un numero.');
+  else
+  {
+    producto=num1*num2;
+    if (isFinite(producto))
+      document.write('Resultado de la multplicacion:'+producto);
+    else
+      document.write('Es infitinito');
+  }
+</script>
+  
+</body>
+</html>
+
+
+
+
+
